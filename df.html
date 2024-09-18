@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المملكة العربية السعودية</title>
+    <style>
+        /* استيراد الخطوط */
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+        
+        /* تنسيق عام */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* تنسيق الهيدر */
+        header {
+            background-image: url('https://saudigazette.com.sa/uploads/images/2021/01/20/1463794.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        header::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        header h1 {
+            position: relative;
+            font-size: 3rem;
+            z-index: 1;
+        }
+
+        /* تنسيق القائمة */
+        nav {
+            background-color: rgba(0, 51, 102, 0.9);
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+            font-size: 1.2rem;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: rgba(0, 34, 68, 0.8);
+            border-radius: 5px;
+        }
+
+        /* تنسيق المحتوى */
+        main {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .section {
+            background-color: rgba(255, 255, 255, 0.9);
+            margin: 20px;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .section:hover {
+            transform: translateY(-10px);
+        }
+
+        .section h2 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        /* معرض الصور */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .gallery img {
+            width: 300px;
+            height: 200px;
+            border-radius: 10px;
+            object-fit: cover;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        /* نموذج الاتصال */
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            padding: 15px 30px;
+            background-color: #004080;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-form button:hover {
+            background-color: #003366;
+        }
+
+        /* تنسيق الفوتر */
+        footer {
+            background-color: #003366;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* تنسيق استجابة الموقع */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            nav a {
+                font-size: 1rem;
+                padding: 10px;
+            }
+
+            .gallery img {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>المملكة العربية السعودية</h1>
+    </header>
+
+    <nav>
+        <a href="#">الرئيسية</a>
+        <a href="#">عن المملكة</a>
+        <a href="#">التاريخ</a>
+        <a href="#">السياحة</a>
+        <a href="#">الاتصال</a>
+    </nav>
+
+    <main>
+        <section class="section">
+            <h2>عن المملكة</h2>
+            <p>المملكة العربية السعودية هي أكبر دولة في شبه الجزيرة العربية وتتميز بتاريخ طويل وتراث غني.</p>
+        </section>
+
+        <section class="section">
+            <h2>التاريخ</h2>
+            <p>تأسست المملكة في عام 1932 على يد الملك عبدالعزيز آل سعود، وهي الآن دولة رائدة في المنطقة.</p>
+        </section>
+
+        <section class="section">
+            <h2>السياحة</h2>
+            <p>تتميز المملكة بتنوع طبيعي هائل ومعالم سياحية بارزة مثل مدائن صالح والعلا ومكة المكرمة.</p>
+        </section>
+
+        <!-- معرض الصور -->
+        <div class="gallery">
+            <img src="https://www.arabnews.com/sites/default/files/styles/n_670_395/public/2021/01/04/2447966-579842803.jpg" alt="مكة المكرمة">
+            <img src="https://www.spa.gov.sa/uploads/scr-files/e828ecf4c3d4aaac8d128b123e861593.jpg" alt="الرياض">
+            <img src="https://arabnews.com/sites/default/files/styles/n_670_395/public/2021/04/05/2443801-133259422.jpg" alt="العلا">
+            <img src="https://saudigazette.com.sa/uploads/images/2020/09/14/1515249.jpg" alt="مدينة جدة">
+        </div>
+
+        <!-- نموذج الاتصال -->
+        <section class="section">
+            <h2>اتصل بنا</h2>
+            <div class="contact-form">
+                <input type="text" placeholder="الاسم الكامل">
+                <input type="email" placeholder="البريد الإلكتروني">
+                <textarea rows="5" placeholder="رسالتك"></textarea>
+                <button type="submit">إرسال</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 المملكة العربية السعودية. جميع الحقوق محفوظة.</p>
+    </footer>
+</body>
+</html>
